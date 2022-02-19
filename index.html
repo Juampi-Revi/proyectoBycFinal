@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByC Distribuidora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css"> 
+</head>
+<body>
+    <header>
+        <section class="container-fluid header1 d-flex justify-content-between align-content-center p-3"> 
+            <a href="#">Contacto
+                <i class="bi bi-envelope "></i>
+            </a>
+            <button type="button" class="btn btn-secondary">Login</button>
+        </section>
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container-fluid d-flex justify-content-around align-items-center">
+                <section class="d-flex justify-content-center align-items-center header3">
+                    <a href="./index.html" class="navbar-brand">
+                        <img src="./img/logoByC.png" alt="logoDeLaEmpresa">
+                    </a>
+                </section>
+                <section class="header2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header bg-light border-bottom">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel ">Menú</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item dropdown list-unstyled nav-button">
+                                    <a class="nav-link dropdown-toggl fs-3 fw-bold text-dark " href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Catalogos
+                                    </a>
+                                    <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink1">
+                                        <li><a class="dropdown-item fs-4" href="#">Por Rubro</a></li>
+                                        <li><a class="dropdown-item fs-4" href="#">Descartables</a></li>
+                                        <li><a class="dropdown-item fs-4" href="#">Gastronomia</a></li>
+                                        <li><a class="dropdown-item fs-4" href="#">Panaderia</a></li>
+                                        <li><a class="dropdown-item fs-4" href="#">Reposteria</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item fs-4" href="#">Por Tipo</a></li>
+                                        <li><a class="dropdown-item fs-4" href="./pag/aceitunas.html">Aceitunas</a></li>
+                                        <li><a class="dropdown-item fs-4" href="./pag/dulceDeLeche.html">Dulces de Leche</a></li>
+                                        <li><a class="dropdown-item fs-4" href="./pag/harinas.html">Harinas</a></li>
+                                        <li><a class="dropdown-item fs-4" href="./pag/catalogo.html">Margarinas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>   
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> 
+                                <li class="nav-item dropdown list-unstyled">
+                                    <a class="nav-link dropdown-toggl fs-3 fw-bold text-dark" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Ofertas
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                        <li><a class="dropdown-item fs-4" href="#">Oferta del Mes</a></li>
+                                        <li><a class="dropdown-item fs-4" href="#">Lo mas buscado</a></li>
+                                    </ul>
+                                </li>
+                            </ul>    
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> 
+                                <li class="nav-item dropdown list-unstyled">
+                                    <a class="nav-link dropdown-toggl fs-3 fw-bold text-dark" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sobre Nosotros
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                        <li><a class="dropdown-item fs-4" href="./pag/nosotros.html#quienes-somos">¿Quienes somos?</a></li>
+                                        <li><a class="dropdown-item fs-4" href="./pag/nosotros.html#nos-caracteriza">Nos caracteriza</a></li>
+                                        <li><a class="dropdown-item fs-4" href="./pag/nosotros.html#noticias">Noticias</a></li>
+                                        <li><a class="dropdown-item fs-4" href="./pag/nosotros.html#sucursales">Sucursales</a></li>
+                                        <li><a class="dropdown-item fs-4" href="./pag/nosotros.html#nos-acompañan">Nos acompañan</a></li>
+                                    </ul>
+                                </li>
+                            </ul>    
+                        </div>       
+                    </div>
+                </section> 
+            </div>      
+        </nav>
+    </header>
+    <main>
+        <section class="container-fluid d-flex main-section1-container flex-wrap">
+            <div class="animate__animated animate__backInLeft">
+                <img src="./img/fachadaByC.jpg" alt="fotoDelFrenteDeLaEmpresa">
+            </div>
+            <div class="d-flex flex-column">
+                <h2 class="animate__animated animate__backInRight">¡Se parte de nuestra gran familia!</h2>
+                <p class="animate__animated animate__backInRight">Y hacete de importantes beneficios</p>
+                <button type="button" class="btn btn-outline-primary animate__animated animate__backInRight">Regístrate aquí</button>
+            </div>
+        </section>
+        <section class="main-section2-container">
+            <div class="main-ofertas1 container-fluid text-center p-4 ">
+                <h2 class="animate__animated animate__backInLeft">Ofertas</h2>
+            </div>
+            <div class="main-ofertas-cards container-fluid d-flex flex-wrap justify-content-center">
+                <div class="card">
+                    <img src="./img/aceitunas1.jpg" alt="imagenDeSachetConAceitunasPorQuinientosGramos">
+                    <div class="card-body">
+                        <h5 class="card-title">Aceitunas "Nucete"</h5>
+                        <p class="card-text">Aceitunas verdes c/carozo x500 gr.</p>
+                        <a href="#" class="btn btn-primary">Mas opciones</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/aceitunas4.jpg" alt="imagenDeFrascoDeAceitunasDescarozadasxQuinientosGramos">
+                    <div class="card-body">
+                        <h5 class="card-title">Aceitunas "Nucete"</h5>
+                        <p class="card-text">Aceitunas descarozadas x500 gr.</p>
+                        <a href="#" class="btn btn-primary">Mas opciones</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/harina1.jpg" alt="paqueteDeHarinaIntegralPurezaPorUnKilogramo">
+                    <div class="card-body">
+                        <h5 class="card-title">Harina Integral "Pureza"</h5>
+                        <p class="card-text">Harina Integral grano fino x1 Kg.</p>
+                        <a href="#" class="btn btn-primary">Mas opciones</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/margarina1.jpg" alt="imagenDeMargarinaDeliciaPorQuinientosGramos">
+                    <div class="card-body">
+                        <h5 class="card-title">Margarina "Delicia"</h5>
+                        <p class="card-text">Margarina vegetal x500 gr.</p>
+                        <a href="#" class="btn btn-primary">Mas opciones</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="./img/dulce3.png" alt="imagenDeFrascoDeDulceDeLechePorKilo">
+                    <div class="card-body">
+                        <h5 class="card-title">Dulce de leche "Milkaut"</h5>
+                        <p class="card-text">Dulce de leche repostero x500 gr.</p>
+                        <a href="#" class="btn btn-primary">Mas opciones</a>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="main-section-servicios">
+            <div class="main-servicios-title container-fluid text-center p-4 ">
+                <h2>Servicios</h2>
+            </div>
+            <div class="container-servicios-cards container-fluid d-flex flex-wrap p-3">
+                <div class="main-cards-services card1">
+                    <h4>Estacionamiento</h4>
+                </div>
+                <div class="main-cards-services card2">
+                    <h4>Atencion telefonica</h4>
+                </div>
+                <div class="main-cards-services card3">
+                    <h4>Cotizaciones especiales</h4>
+                </div>
+                <div class="main-cards-services card4">
+                    <h4>Carga</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

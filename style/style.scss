@@ -1,0 +1,210 @@
+$color-primary: black;
+$color-secondary: whitesmoke;
+$color-hover: orangered;
+
+$font-big: 2.5rem;
+$font-md: 2rem;
+$font-sm: 1.6rem;
+
+$backgraund-primary: linear-gradient(90deg, rgba(18,16,84,1) 2%, rgba(18,16,84,1) 43%, rgba(36,33,137,1) 83%);
+$backgraund-secondary: linear-gradient(90deg, rgba(37,33,167,1) 22%, rgba(53,48,218,1) 93%);
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size:62.5%;
+    font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
+}
+/*Estilos index.html*/
+
+/*Header*/
+.header1{
+    background: $backgraund-primary;
+    padding: 1rem;
+    a{
+        text-decoration: none;
+        color: $color-secondary;
+        font-size: $font-sm;
+        margin: auto 0;
+    }
+    a:hover{
+        color: $color-hover;
+        font-weight: bold;
+    }
+    button{
+        font-size:$font-sm;
+        width: 10rem;
+        border-radius:2rem;
+    }
+    button:hover{
+        color: $color-hover;
+        font-weight: bold;
+        background-color: $color-secondary;
+    }
+}
+nav{
+    height:12rem;
+    padding:1rem;
+    box-shadow: 2px 10px 22px -16px rgba(0,0,0,0.49);
+    div{
+        .header3{
+            a{
+                img{
+                    width:15rem;
+                }
+            }
+        }
+        .header2{
+            button{
+                i{
+                    font-size: 3.5rem;
+                }
+            }
+            div{
+                h5{
+                    font-size:$font-big;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+main{
+    margin-top: 2rem;
+    .main-section1-container{
+        justify-content: space-evenly;
+        align-items: center;
+        div{
+            img{
+                max-width: 45rem;
+                padding: 1rem;
+                box-shadow: 1px 1px 22px -6px rgba(173,166,173,1);
+                margin-bottom: 2rem;
+            }
+        }
+        div{
+            align-items: center;
+            h2{
+                margin-bottom:5rem;
+                font-size: 3rem;
+                font-style: italic;
+            }
+            p{
+                font-size:$font-md;
+                text-align: center;
+            }
+            .btn{
+                margin-top:10rem;
+                width: 50%;
+                padding: 1rem;
+                font-size: $font-md;
+                border-radius: 2rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    .main-section2-container{
+        .main-ofertas1{
+            background: $backgraund-secondary;
+            h2{
+                font-size: $font-big;
+                color: $color-secondary;
+                font-style:italic;
+            }
+        }
+        .main-ofertas-cards{
+            height:auto;
+            .card{
+                width: 30rem;
+                height:auto;
+                margin:2rem;
+                border-radius: 2rem;
+                padding:1rem;
+                img{
+                    width: 22rem;
+                    margin: 0 auto;
+                }
+                .card-body{
+                    .card-title{
+                        font-weight: bold;
+                        font-size: $font-sm;
+                    }
+                    .card-text{
+                        font-size: $font-sm;
+                    }
+                    a{
+                        font-size: $font-sm;
+                    }
+                }
+            }
+            .card:hover{
+                border: 3px solid $color-hover;
+            }
+        }
+    }
+    .main-section-servicios{
+        .main-servicios-title{
+            background: $backgraund-secondary;
+            h2{
+                font-size: $font-big;
+                color: $color-secondary;
+                font-style: italic;
+            }
+        }
+        .container-servicios-cards{
+            justify-content: space-around;
+            .main-cards-services{
+                width: 35rem;
+                height:18rem;
+                border: 1px solid $color-primary;
+                border-radius: 1rem;
+                text-align: center;
+                margin: 2rem;
+                transition: border-radius 2s;
+                h4{
+                    margin-top:2rem;
+                    font-size: $font-md;
+                    color:whitesmoke;
+                    text-shadow: 1px 1px 1px rgb(8, 8, 8);
+                }
+            }
+            .main-cards-services:hover{
+                border-radius: 10rem;
+                color: orangered;
+                border: 2px solid orangered; 
+            }
+            .main-cards-services:hover h4{
+                font-weight: bold;
+                color: orangered;
+            }
+            .card1{
+                background-image: url(../img/estacionamiento.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .card2{
+                background-image: url(../img/atencionTelefonica.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .card3{
+                background-image: url(../img/ahorro.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .card4{
+                background-image: url(../img/ayudaCargar.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
+}
