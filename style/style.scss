@@ -22,6 +22,7 @@ html{
 /*Estilos index.html*/
 
 /*Header*/
+/*Primera seccion del header con "contacto" y "login"*/
 .header1{
     background: $backgraund-primary;
     padding: 1rem;
@@ -45,7 +46,12 @@ html{
         font-weight: bold;
         background-color: $color-secondary;
     }
+    button:hover a{
+        color: $color-hover;
+        font-weight: bold;
+    }
 }
+/*Segunda seccion del header con el logo y el nav*/
 nav{
     height:12rem;
     padding:1rem;
@@ -73,19 +79,23 @@ nav{
         }
     }
 }
+/*Estilos main index.html*/
 main{
     margin-top: 2rem;
+    /*Estilos de la seccion de saludo y registro*/
     .main-section1-container{
         justify-content: space-evenly;
         align-items: center;
         div{
+            /*Estilos de la imagen primera seccion del main*/
             img{
-                max-width: 45rem;
+                max-width: 65rem;
                 padding: 1rem;
                 box-shadow: 1px 1px 22px -6px rgba(173,166,173,1);
                 margin-bottom: 2rem;
             }
         }
+        /*Saludo y botton registro*/
         div{
             align-items: center;
             h2{
@@ -104,20 +114,32 @@ main{
                 font-size: $font-md;
                 border-radius: 2rem;
                 margin-bottom: 2rem;
+                a{
+                    text-decoration: none;
+                }
+            }
+            .btn:hover a{
+                color: $color-secondary;
             }
         }
     }
+    /*Esilos seccion ofertas index.html*/
     .main-section2-container{
+        /*Titulo de la seccion*/
         .main-ofertas1{
             background: $backgraund-secondary;
             h2{
                 font-size: $font-big;
                 color: $color-secondary;
                 font-style:italic;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 1px rgb(49, 48, 49);
             }
         }
+        /*Seccion contenedora cards ofertas index.html*/
         .main-ofertas-cards{
             height:auto;
+            /*Estilos cards ofertas*/
             .card{
                 width: 30rem;
                 height:auto;
@@ -138,6 +160,14 @@ main{
                     }
                     a{
                         font-size: $font-sm;
+                        padding: 1rem;
+                        border-radius: 1rem;
+                    }
+                    a:hover{
+                        color: $color-hover;
+                        font-weight: bold;
+                        background-color:$color-secondary;
+                        border-color: $color-hover;
                     }
                 }
             }
@@ -146,17 +176,23 @@ main{
             }
         }
     }
+    /*Seccion Servicios index.html*/
     .main-section-servicios{
+        /*Titulo de la seccion*/
         .main-servicios-title{
             background: $backgraund-secondary;
             h2{
                 font-size: $font-big;
                 color: $color-secondary;
                 font-style: italic;
+                text-transform: uppercase;
+                text-shadow: 1px 1px 1px rgb(49, 48, 49);
             }
         }
+        /*Contenedor de cards servicios*/
         .container-servicios-cards{
             justify-content: space-around;
+            /*Estilos de cards servicios*/
             .main-cards-services{
                 width: 35rem;
                 height:18rem;
@@ -181,6 +217,7 @@ main{
                 font-weight: bold;
                 color: orangered;
             }
+            /*inscersion de las imagenes dentro de las cards servicios*/
             .card1{
                 background-image: url(../img/estacionamiento.jpg);
                 background-repeat: no-repeat;
@@ -204,6 +241,161 @@ main{
                 background-repeat: no-repeat;
                 background-size: cover;
                 background-position: center;
+            }
+        }
+    }
+}
+/*Estilos del footer index.html*/
+footer{
+    background: $backgraund-primary;
+    /*Primera seccion del footer que incluye iconos de redes*/
+    .footer-container-icons{
+        display: flex;
+        justify-content: flex-end;
+        border-bottom: 0.1px solid rgba(245, 245, 245, 0.932);
+        a{
+            margin:1rem;
+            i{
+                color: $color-secondary;
+            }
+            i:hover{
+                color: $color-hover;
+            }
+        }
+    }
+    /*Segunda seccion del footer contenedora de mapa de sitio*/
+    .footer-container-mapaSitio{
+        /*contenedor del logo footer*/
+        .footer-mapaSitio-img{
+            display:grid;
+            place-items: center;
+            a{
+                img{
+                    width: 23rem;
+                }
+            }
+        }
+        /*contenedor mapa de sitio footer index.html*/
+        .listas-footer{
+            div{
+                margin: 3rem;
+                .footer-lista{
+                    list-style:none;
+                    font-size: $font-md;
+                    li{
+                        a{
+                            text-decoration:none;
+                            color: $color-secondary;
+                            h3{
+                                font-size: $font-big;
+                                text-shadow: 1px 1px 1px rgb(8, 8, 8);
+                            }
+                        }
+                    }
+                    .subtitulo-list-footer{
+                        font-style: italic;
+                        color:$color-hover;
+                    }
+                    li:hover a{
+                        color: $color-hover;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+/*Estilos aceitunas.html*/
+/*Main aceitunas html titulo*/
+.main-section-catalogos-titulo{
+    height:6rem;
+    background: $backgraund-secondary;
+    h2{
+        font-size:$font-big;
+        font-style: italic;
+        color:$color-secondary;
+        text-shadow: 1px 1px 1px rgb(49, 48, 49);
+        margin: 2rem;
+        text-transform: uppercase;
+    }
+}
+/*Estilos main aceitunas.html*/
+.main-section-catalogos-container{ 
+    height:80vh;
+    /*Estilos aside main aceitunas.html*/
+    aside{
+        width:auto;
+        padding: 3rem;
+        height:min-content;
+        margin:2rem;
+        border: 1px solid rgba(173,166,173,1);
+        border-radius: 1rem;
+        h4{
+            font-size:$font-md;
+            color:$color-hover;
+        }
+        ul{
+            margin-top: 1rem;
+            li{
+                list-style: none;
+                font-size: $font-sm;
+                line-height: 2.5rem;
+                a{
+                    text-decoration: none;
+                    color: $color-primary;
+                }
+                a:hover{
+                    color:$color-hover;
+                    font-weight: bold;
+                }
+            }
+            .main-aside-categorias-titulo{
+                font-weight: bold;
+            }
+        }
+        
+    }
+    .main-section-catalogos-cards{
+        width: 70%;
+        height: 90%;
+        margin: 3rem;
+        border: 1px solid rgba(173,166,173,1);
+        border-radius: 2rem;
+        .catalogos-cards{
+            div{
+                width: 80%;
+                margin: auto;
+                .imagen-card{
+                    width: 30rem;
+                    padding:1rem;
+                }
+                div{
+                    h5{
+                        font-size:$font-big;
+                        color:$color-hover;
+                        margin-bottom: 2rem;
+                    }
+                    p{
+                        font-size:$font-md;
+                    }
+                    a{
+                        font-size:$font-sm;
+                        border-radius: 1rem;
+                        padding: 1rem;
+                        margin-top: 4rem;
+                    }
+                    a:hover{
+                        color: $color-hover;
+                        background-color: white;
+                        font-weight: bold;
+                        border-color: $color-hover;
+                    }
+                }
+            }
+        }
+        .carousel{
+            button{
+                color: black;
             }
         }
     }

@@ -12,6 +12,7 @@ html {
 
 /*Estilos index.html*/
 /*Header*/
+/*Primera seccion del header con "contacto" y "login"*/
 .header1 {
   background: linear-gradient(90deg, #121054 2%, #121054 43%, #242189 83%);
   padding: 1rem;
@@ -36,7 +37,12 @@ html {
   font-weight: bold;
   background-color: whitesmoke;
 }
+.header1 button:hover a {
+  color: orangered;
+  font-weight: bold;
+}
 
+/*Segunda seccion del header con el logo y el nav*/
 nav {
   height: 12rem;
   padding: 1rem;
@@ -53,15 +59,23 @@ nav div .header2 div h5 {
   font-weight: bold;
 }
 
+/*Estilos main index.html*/
 main {
   margin-top: 2rem;
+  /*Estilos de la seccion de saludo y registro*/
+  /*Esilos seccion ofertas index.html*/
+  /*Seccion Servicios index.html*/
 }
 main .main-section1-container {
   justify-content: space-evenly;
   align-items: center;
+  /*Saludo y botton registro*/
+}
+main .main-section1-container div {
+  /*Estilos de la imagen primera seccion del main*/
 }
 main .main-section1-container div img {
-  max-width: 45rem;
+  max-width: 65rem;
   padding: 1rem;
   box-shadow: 1px 1px 22px -6px #ada6ad;
   margin-bottom: 2rem;
@@ -86,6 +100,16 @@ main .main-section1-container div .btn {
   border-radius: 2rem;
   margin-bottom: 2rem;
 }
+main .main-section1-container div .btn a {
+  text-decoration: none;
+}
+main .main-section1-container div .btn:hover a {
+  color: whitesmoke;
+}
+main .main-section2-container {
+  /*Titulo de la seccion*/
+  /*Seccion contenedora cards ofertas index.html*/
+}
 main .main-section2-container .main-ofertas1 {
   background: linear-gradient(90deg, #2521a7 22%, #3530da 93%);
 }
@@ -93,9 +117,12 @@ main .main-section2-container .main-ofertas1 h2 {
   font-size: 2.5rem;
   color: whitesmoke;
   font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #313031;
 }
 main .main-section2-container .main-ofertas-cards {
   height: auto;
+  /*Estilos cards ofertas*/
 }
 main .main-section2-container .main-ofertas-cards .card {
   width: 30rem;
@@ -117,9 +144,21 @@ main .main-section2-container .main-ofertas-cards .card .card-body .card-text {
 }
 main .main-section2-container .main-ofertas-cards .card .card-body a {
   font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+main .main-section2-container .main-ofertas-cards .card .card-body a:hover {
+  color: orangered;
+  font-weight: bold;
+  background-color: whitesmoke;
+  border-color: orangered;
 }
 main .main-section2-container .main-ofertas-cards .card:hover {
   border: 3px solid orangered;
+}
+main .main-section-servicios {
+  /*Titulo de la seccion*/
+  /*Contenedor de cards servicios*/
 }
 main .main-section-servicios .main-servicios-title {
   background: linear-gradient(90deg, #2521a7 22%, #3530da 93%);
@@ -128,9 +167,13 @@ main .main-section-servicios .main-servicios-title h2 {
   font-size: 2.5rem;
   color: whitesmoke;
   font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #313031;
 }
 main .main-section-servicios .container-servicios-cards {
   justify-content: space-around;
+  /*Estilos de cards servicios*/
+  /*inscersion de las imagenes dentro de las cards servicios*/
 }
 main .main-section-servicios .container-servicios-cards .main-cards-services {
   width: 35rem;
@@ -179,6 +222,151 @@ main .main-section-servicios .container-servicios-cards .card4 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+/*Estilos del footer index.html*/
+footer {
+  background: linear-gradient(90deg, #121054 2%, #121054 43%, #242189 83%);
+  /*Primera seccion del footer que incluye iconos de redes*/
+  /*Segunda seccion del footer contenedora de mapa de sitio*/
+}
+footer .footer-container-icons {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 0.1px solid rgba(245, 245, 245, 0.932);
+}
+footer .footer-container-icons a {
+  margin: 1rem;
+}
+footer .footer-container-icons a i {
+  color: whitesmoke;
+}
+footer .footer-container-icons a i:hover {
+  color: orangered;
+}
+footer .footer-container-mapaSitio {
+  /*contenedor del logo footer*/
+  /*contenedor mapa de sitio footer index.html*/
+}
+footer .footer-container-mapaSitio .footer-mapaSitio-img {
+  display: grid;
+  place-items: center;
+}
+footer .footer-container-mapaSitio .footer-mapaSitio-img a img {
+  width: 23rem;
+}
+footer .footer-container-mapaSitio .listas-footer div {
+  margin: 3rem;
+}
+footer .footer-container-mapaSitio .listas-footer div .footer-lista {
+  list-style: none;
+  font-size: 2rem;
+}
+footer .footer-container-mapaSitio .listas-footer div .footer-lista li a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+footer .footer-container-mapaSitio .listas-footer div .footer-lista li a h3 {
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 1px #080808;
+}
+footer .footer-container-mapaSitio .listas-footer div .footer-lista .subtitulo-list-footer {
+  font-style: italic;
+  color: orangered;
+}
+footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
+  color: orangered;
+  font-weight: bold;
+}
+
+/*Estilos aceitunas.html*/
+/*Main aceitunas html titulo*/
+.main-section-catalogos-titulo {
+  height: 6rem;
+  background: linear-gradient(90deg, #2521a7 22%, #3530da 93%);
+}
+.main-section-catalogos-titulo h2 {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #313031;
+  margin: 2rem;
+  text-transform: uppercase;
+}
+
+/*Estilos main aceitunas.html*/
+.main-section-catalogos-container {
+  height: 80vh;
+  /*Estilos aside main aceitunas.html*/
+}
+.main-section-catalogos-container aside {
+  width: auto;
+  padding: 3rem;
+  height: min-content;
+  margin: 2rem;
+  border: 1px solid #ada6ad;
+  border-radius: 1rem;
+}
+.main-section-catalogos-container aside h4 {
+  font-size: 2rem;
+  color: orangered;
+}
+.main-section-catalogos-container aside ul {
+  margin-top: 1rem;
+}
+.main-section-catalogos-container aside ul li {
+  list-style: none;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+.main-section-catalogos-container aside ul li a {
+  text-decoration: none;
+  color: black;
+}
+.main-section-catalogos-container aside ul li a:hover {
+  color: orangered;
+  font-weight: bold;
+}
+.main-section-catalogos-container aside ul .main-aside-categorias-titulo {
+  font-weight: bold;
+}
+.main-section-catalogos-container .main-section-catalogos-cards {
+  width: 70%;
+  height: 90%;
+  margin: 3rem;
+  border: 1px solid #ada6ad;
+  border-radius: 2rem;
+}
+.main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div {
+  width: 80%;
+  margin: auto;
+}
+.main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div .imagen-card {
+  width: 30rem;
+  padding: 1rem;
+}
+.main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div h5 {
+  font-size: 2.5rem;
+  color: orangered;
+  margin-bottom: 2rem;
+}
+.main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div p {
+  font-size: 2rem;
+}
+.main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div a {
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+.main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div a:hover {
+  color: orangered;
+  background-color: white;
+  font-weight: bold;
+  border-color: orangered;
+}
+.main-section-catalogos-container .main-section-catalogos-cards .carousel button {
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

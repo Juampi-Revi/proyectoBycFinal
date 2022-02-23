@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByC Distribuidora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style/style.css"> 
+</head>
+<body>
+    <header>
+        <section class="container-fluid header1 d-flex justify-content-between align-content-center p-3"> 
+            <a href="#">Contacto
+                <i class="bi bi-envelope "></i>
+            </a>
+            <button type="button" class="btn btn-secondary">
+                <a href="../pag/login.html">
+                    Login
+                </a>
+            </button>
+        </section>
+        <nav class="navbar navbar-expand-sm ">
+            <div class="container-fluid d-flex justify-content-around align-items-center">
+                <section class="d-flex justify-content-center align-items-center header3">
+                    <a href="../index.html" class="navbar-brand">
+                        <img src="../img/logoByC.png" alt="logoDeLaEmpresa">
+                    </a>
+                </section>
+                <section class="header2">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header bg-light border-bottom">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel ">Menú</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item dropdown list-unstyled nav-button">
+                                    <a class="nav-link dropdown-toggl nav-title fs-2 fw-bold text-dark" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Catalogos
+                                    </a>
+                                    <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink1">
+                                        <li><a class="dropdown-item fs-3" href="#">Por Rubro</a></li>
+                                        <li><a class="dropdown-item fs-3" href="#">Descartables</a></li>
+                                        <li><a class="dropdown-item fs-3" href="#">Gastronomia</a></li>
+                                        <li><a class="dropdown-item fs-3" href="#">Panaderia</a></li>
+                                        <li><a class="dropdown-item fs-3" href="#">Reposteria</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item fs-3" href="#">Por Tipo</a></li>
+                                        <li><a class="dropdown-item fs-3" href="../pag/aceitunas.html">Aceitunas</a></li>
+                                        <li><a class="dropdown-item fs-3" href="../pag/dulceDeLeche.html">Dulces de Leche</a></li>
+                                        <li><a class="dropdown-item fs-3" href="../pag/harinas.html">Harinas</a></li>
+                                        <li><a class="dropdown-item fs-3" href="../pag/catalogos.html">Margarinas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>   
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> 
+                                <li class="nav-item dropdown list-unstyled">
+                                    <a class="nav-link dropdown-toggl fs-2 fw-bold text-dark" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Ofertas
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                        <li><a class="dropdown-item fs-3" href="#">Oferta del Mes</a></li>
+                                        <li><a class="dropdown-item fs-3" href="#">Lo mas buscado</a></li>
+                                    </ul>
+                                </li>
+                            </ul>    
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> 
+                                <li class="nav-item dropdown list-unstyled">
+                                    <a class="nav-link dropdown-toggl fs-2 fw-bold text-dark" href="#" id="navbarDropdownMenuLink1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sobre Nosotros
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                                        <li><a class="dropdown-item fs-3" href="../pag/nosotros.html#quienes-somos">¿Quienes somos?</a></li>
+                                        <li><a class="dropdown-item fs-3" href="../pag/nosotros.html#nos-caracteriza">Nos caracteriza</a></li>
+                                        <li><a class="dropdown-item fs-3" href="../pag/nosotros.html#noticias">Noticias</a></li>
+                                        <li><a class="dropdown-item fs-3" href="../pag/nosotros.html#sucursales">Sucursales</a></li>
+                                        <li><a class="dropdown-item fs-3" href="../pag/nosotros.html#nos-acompañan">Nos acompañan</a></li>
+                                    </ul>
+                                </li>
+                            </ul>    
+                        </div>       
+                    </div>
+                </section> 
+            </div>      
+        </nav>
+    </header>
+    <main>
+        <section class="main-section-catalogos-titulo container-fluid d-flex justify-content-center align-items-center"> 
+            <h2 class="animate__animated animate__bounceInRight">Catalogos</h2>
+        </section>
+        <section class="main-section-catalogos-container d-flex align-items-center container-fluid">
+            <aside>
+                <h4>Categorias</h4>
+                <ul>
+                    <li class="main-aside-categorias-titulo">Por Rubro</li>
+                    <li>
+                        <a href="">Descartables</a>
+                    </li>
+                    <li>
+                        <a href="">Gastronomia</a>
+                    </li>
+                    <li>
+                        <a href="">Panaderia</a>
+                    </li>
+                    <li>
+                        <a href="">Reposteria</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="main-aside-categorias-titulo">Por Tipo</li>
+                    <li>
+                        <a href="../pag/aceitunas.html">Aceitunas</a>
+                    </li>
+                    <li>
+                        <a href="../pag/dulceDeLeche.html">Dulces de Leche</a>
+                    </li>
+                    <li>
+                        <a href="../pag/harinas.html">Harinas</a>
+                    </li>
+                    <li>
+                        <a href="../pag/catalogo.html">Margarinas</a>
+                    </li>
+                </ul>
+            </aside>
+            <section class="main-section-catalogos-cards d-flex justify-content-center align-items-center flex-wrap"> 
+                <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active catalogos-cards">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="imagen-card">
+                                    <img src="../img/margarina1.jpg" class="card-img-top" alt="imagenDeMargarina1">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Margarina "Delicia"</h5>
+                                    <p class="card-text">Margarina Delicia x200gr. <br> Categorias: margarinas, panaderia, reposteria.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item catalogos-cards">
+                            <div class=" d-flex justify-content-center align-items-center" >
+                                <div class="imagen-card">
+                                    <img src="../img/margarina2.jpg" class="card-img-top" alt="imagenDeMargarina2">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Margarina "Primavera"</h5>
+                                    <p class="card-text">Margarina Primavera x200gr.<br> Categorias: margarinas, panaderia, reposteria.
+                                    <a href="#" class="btn btn-primary">Lista de precios</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item catalogos-cards">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="imagen-card">
+                                    <img src="../img/margarina3.jpg" class="card-img-top" alt="imagenDeMargarina3">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Margarina "Margadan"</h5>
+                                    <p class="card-text">Margarina Margadan Masas x200g. <br> Categorias: margarinas, panaderia, reposteria.
+                                    <a href="#" class="btn btn-primary">Lista de precios</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item catalogos-cards">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="imagen-card">
+                                    <img src="../img/margarina4.jpg" class="card-img-top" alt="imagenDeMargarina4">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Margarina "Mazola"</h5>
+                                    <p class="card-text">Margarina Mazola x400g. <br> Categorias: margarinas, panaderia, reposteria.
+                                    <a href="#" class="btn btn-primary">Lista de precios</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item catalogos-cards">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="imagen-card">
+                                    <img src="../img/margarina5.jpg" class="card-img-top" alt="imagenDeMargarina5">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Margarina "Danica"</h5>
+                                    <p class="card-text">Margarina Danica Masas x500g. <br> Categorias: margarinas, panaderia, reposteria.
+                                    <a href="#" class="btn btn-primary">Lista de precios</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item catalogos-cards">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="imagen-card">
+                                    <img src="../img/margarina6.jpg" class="card-img-top" alt="imagenDeMargarina6">
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Margarina "Tulipan"</h5>
+                                    <p class="card-text">Margarina Tulipan x400g. <br> Categorias: margarinas, panaderia, reposteria.
+                                    <a href="#" class="btn btn-primary">Lista de precios</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+    </main>
+    <footer class="container-fluid d-flex flex-column">
+        <section class="footer-container-icons">
+            <a  href="https://api.whatsapp.com/send?phone=3584123597 " target="_blank">
+                <i class="bi bi-whatsapp fs-1 fw-bold"></i>
+            </a>
+            <a href="https://www.instagram.com/bycrio4/" target="_blank">
+                <i class="bi bi-instagram fs-1 fw-bold"></i>
+            </a>
+            <a  href="https://www.facebook.com/ByCRio4/?ref=pages_you_manage" target="_blank">
+                <i class="bi bi-facebook fs-1 fw-bold"></i>
+            </a>
+        </section>
+        <section class="footer-container-mapaSitio d-flex justify-content-around">
+            <div class="footer-mapaSitio-img">
+                <a href="../index.html">
+                    <img src="../img/logoByC.png" alt="imagenDelLogoDeByC">
+                </a>
+            </div>
+            <section class="listas-footer d-flex ">
+                <div>  
+                    <ul class="footer-lista">
+                        <li>
+                            <a href="../pag/catalogos.html">
+                                <h3>Catalogos</h3>
+                            </a>
+                        </li>
+                        <li class="subtitulo-list-footer">Por Rubro</li>
+                        <li>
+                            <a href="">Descartables</a>
+                        </li>
+                        <li>
+                            <a href="">Gastronomia</a>
+                        </li>
+                        <li>
+                            <a href="">Panaderia</a>
+                        </li>
+                        <li>
+                            <a href="">Reposteria</a>
+                        </li>
+                        <li class="subtitulo-list-footer">Por Tipo</li>
+                        <li>
+                            <a href="../pag/aceitunas.html">Aceitunas</a>
+                        </li>
+                        <li>
+                            <a href="../pag/dulceDeLeche.html">Dulces de leche</a>
+                        </li>
+                        <li>
+                            <a href="../pag/harinas.html">Harinas</a>
+                        </li>
+                        <li>
+                            <a href="../pag/catalogos.html">Margarinas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-lista">
+                        <li>
+                            <a href="">
+                                <h3>Ofertas</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">Ofertas del mes</a>
+                        </li>
+                        <li>
+                            <a href="">Lo mas vendido</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="footer-lista">
+                        <li>
+                            <a href="../pag/nosotros.html">
+                                <h3>Sombre Nosotros</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../pag/nosotros.html#quienes-somos">¿Quienes somos?</a>
+                        </li>
+                        <li>
+                            <a href="../pag/nosotros.html#nos-caracteriza">Nos caracteriza</a>
+                        </li>
+                        <li>
+                            <a href="../pag/nosotros.html#sucursales">Sucursales</a>
+                        </li>
+                        <li>
+                            <a href="../pag/nosotros.html#noticias">Noticias</a>
+                        </li>
+                        <li>
+                            <a href="../pag/nosotros.html#nos-acompañan">Nos acompañan</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </footer>
+    <section class="container-fluid fs-5 p-2">
+        <p>Todos los derechos reservados.</p>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
