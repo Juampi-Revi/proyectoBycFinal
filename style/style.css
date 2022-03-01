@@ -1,3 +1,34 @@
+.titulo, .main-section-catalogos-titulo h2, main .main-section-servicios .main-servicios-title h2, main .main-section2-container .main-ofertas1 h2 {
+  font-size: 2.1rem;
+  color: whitesmoke;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #313031;
+}
+
+.bgimage, main .main-section-servicios .container-servicios-cards .card4, main .main-section-servicios .container-servicios-cards .card3, main .main-section-servicios .container-servicios-cards .card2, main .main-section-servicios .container-servicios-cards .card1 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.flex, .main-container-form-register .form-register-checkbox, .main-container-form-register .main-form-register, .main-container-form-register, .main-login-form .container-main-login .login-container-form, .main-login-form .container-main-login {
+  display: flex;
+  flex-direction: column;
+}
+
+.border-container, .main-container-form-register, .main-login-form .container-main-login, .main-section-catalogos-container .main-section-catalogos-cards, .main-section-catalogos-container aside {
+  border: 1px solid #ada6ad;
+  border-radius: 2rem;
+  box-shadow: 2px 10px 22px -16px rgba(0, 0, 0, 0.49);
+}
+
+.border-input, .main-container-form-register .main-form-register input, .main-login-form .container-main-login .login-container-form input {
+  border: 1.5px solid #ada6ad;
+  border-radius: 0.8rem;
+  padding: 0.7rem;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,7 +51,7 @@ html {
 .header1 a {
   text-decoration: none;
   color: whitesmoke;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   margin: auto 0;
 }
 .header1 a:hover {
@@ -28,7 +59,7 @@ html {
   font-weight: bold;
 }
 .header1 button {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   width: 10rem;
   border-radius: 2rem;
 }
@@ -55,7 +86,7 @@ nav div .header2 button i {
   font-size: 3.5rem;
 }
 nav div .header2 div h5 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   font-weight: bold;
 }
 
@@ -89,14 +120,14 @@ main .main-section1-container div h2 {
   font-style: italic;
 }
 main .main-section1-container div p {
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-align: center;
 }
 main .main-section1-container div .btn {
   margin-top: 10rem;
   width: 50%;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   border-radius: 2rem;
   margin-bottom: 2rem;
 }
@@ -112,13 +143,6 @@ main .main-section2-container {
 }
 main .main-section2-container .main-ofertas1 {
   background: linear-gradient(90deg, #2521a7 22%, #3530da 93%);
-}
-main .main-section2-container .main-ofertas1 h2 {
-  font-size: 2.5rem;
-  color: whitesmoke;
-  font-style: italic;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px #313031;
 }
 main .main-section2-container .main-ofertas-cards {
   height: auto;
@@ -137,13 +161,13 @@ main .main-section2-container .main-ofertas-cards .card img {
 }
 main .main-section2-container .main-ofertas-cards .card .card-body .card-title {
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 main .main-section2-container .main-ofertas-cards .card .card-body .card-text {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 main .main-section2-container .main-ofertas-cards .card .card-body a {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 1rem;
   border-radius: 1rem;
 }
@@ -163,13 +187,6 @@ main .main-section-servicios {
 main .main-section-servicios .main-servicios-title {
   background: linear-gradient(90deg, #2521a7 22%, #3530da 93%);
 }
-main .main-section-servicios .main-servicios-title h2 {
-  font-size: 2.5rem;
-  color: whitesmoke;
-  font-style: italic;
-  text-transform: uppercase;
-  text-shadow: 1px 1px 1px #313031;
-}
 main .main-section-servicios .container-servicios-cards {
   justify-content: space-around;
   /*Estilos de cards servicios*/
@@ -186,7 +203,7 @@ main .main-section-servicios .container-servicios-cards .main-cards-services {
 }
 main .main-section-servicios .container-servicios-cards .main-cards-services h4 {
   margin-top: 2rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: whitesmoke;
   text-shadow: 1px 1px 1px #080808;
 }
@@ -201,27 +218,15 @@ main .main-section-servicios .container-servicios-cards .main-cards-services:hov
 }
 main .main-section-servicios .container-servicios-cards .card1 {
   background-image: url(../img/estacionamiento.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main .main-section-servicios .container-servicios-cards .card2 {
   background-image: url(../img/atencionTelefonica.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main .main-section-servicios .container-servicios-cards .card3 {
   background-image: url(../img/ahorro.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main .main-section-servicios .container-servicios-cards .card4 {
   background-image: url(../img/ayudaCargar.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 /*Estilos del footer index.html*/
@@ -260,14 +265,14 @@ footer .footer-container-mapaSitio .listas-footer div {
 }
 footer .footer-container-mapaSitio .listas-footer div .footer-lista {
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 footer .footer-container-mapaSitio .listas-footer div .footer-lista li a {
   text-decoration: none;
   color: whitesmoke;
 }
 footer .footer-container-mapaSitio .listas-footer div .footer-lista li a h3 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   text-shadow: 1px 1px 1px #080808;
 }
 footer .footer-container-mapaSitio .listas-footer div .footer-lista .subtitulo-list-footer {
@@ -285,15 +290,6 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
   height: 6rem;
   background: linear-gradient(90deg, #2521a7 22%, #3530da 93%);
 }
-.main-section-catalogos-titulo h2 {
-  font-size: 2.5rem;
-  font-style: italic;
-  color: whitesmoke;
-  text-shadow: 1px 1px 1px #313031;
-  margin: 2rem;
-  text-transform: uppercase;
-}
-
 /*Estilos main aceitunas.html*/
 .main-section-catalogos-container {
   height: 80vh;
@@ -304,11 +300,9 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
   padding: 3rem;
   height: min-content;
   margin: 2rem;
-  border: 1px solid #ada6ad;
-  border-radius: 1rem;
 }
 .main-section-catalogos-container aside h4 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: orangered;
 }
 .main-section-catalogos-container aside ul {
@@ -316,7 +310,7 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
 }
 .main-section-catalogos-container aside ul li {
   list-style: none;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 2.5rem;
 }
 .main-section-catalogos-container aside ul li a {
@@ -334,8 +328,6 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
   width: 70%;
   height: 90%;
   margin: 3rem;
-  border: 1px solid #ada6ad;
-  border-radius: 2rem;
 }
 .main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div {
   width: 80%;
@@ -346,15 +338,15 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
   padding: 1rem;
 }
 .main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div h5 {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   color: orangered;
   margin-bottom: 2rem;
 }
 .main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div p {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 .main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div a {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   border-radius: 1rem;
   padding: 1rem;
   margin-top: 4rem;
@@ -367,6 +359,107 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
 }
 .main-section-catalogos-container .main-section-catalogos-cards .carousel button {
   color: black;
+}
+
+/*Estilos login.html*/
+.main-login-form {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  place-items: center;
+}
+.main-login-form .container-main-login {
+  width: 28%;
+  height: 70%;
+  align-items: center;
+}
+.main-login-form .container-main-login .login-container-form h3 {
+  text-align: center;
+  margin: 4rem;
+  font-size: 2.1rem;
+  color: orangered;
+  text-shadow: 1px 1px 1px #8d7c8d;
+}
+.main-login-form .container-main-login .login-container-form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.main-login-form .container-main-login .login-container-form input {
+  width: 22rem;
+  font-size: 1.5rem;
+}
+.main-login-form .container-main-login .login-container-form input:hover {
+  border: 2px solid orangered;
+}
+.main-login-form .container-main-login .login-container-form .form-button-login {
+  margin-top: 5rem;
+  border: 1.5px solid #3a3ac5;
+  color: #3a3ac5;
+  background-color: white;
+  font-weight: bold;
+}
+.main-login-form .container-main-login .login-container-form .form-button-login:hover {
+  color: orangered;
+  font-weight: bold;
+  border: 2px solid orangered;
+}
+.main-login-form .login-container-form-register {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.main-login-form .login-container-form-register a {
+  text-decoration: none;
+  color: black;
+}
+.main-login-form .login-container-form-register a:hover {
+  color: orangered;
+  font-weight: bold;
+}
+
+/*Estilos register.html*/
+.main-container-form-register {
+  width: 45%;
+  height: auto;
+  align-items: center;
+}
+.main-container-form-register .main-form-register {
+  width: 50%;
+}
+.main-container-form-register .main-form-register h3 {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2.1rem;
+  color: orangered;
+  text-shadow: 1px 1px 1px #8d7c8d;
+}
+.main-container-form-register .main-form-register label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+}
+.main-container-form-register .main-form-register input {
+  font-size: 1.5rem;
+}
+.main-container-form-register .main-form-register input:hover {
+  color: orangered;
+  font-weight: bold;
+  border: 2px solid orangered;
+}
+.main-container-form-register .form-register-checkbox .form-register-checkbox-div input {
+  height: 1.2rem;
+}
+.main-container-form-register .form-register-checkbox .form-register-checkbox-div label {
+  font-size: 1.5rem;
+}
+.main-container-form-register .form-button-register {
+  margin: 4rem auto;
+  width: 100%;
+  border: 1.5px solid #3a3ac5;
+  color: #3a3ac5;
+  background-color: white;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

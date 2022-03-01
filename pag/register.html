@@ -93,8 +93,33 @@
             </div>      
         </nav>
     </header>
-    <main>
-        
+    <main class="main-login-form">
+        <section class="main-container-form-register">
+            <form action="" class="main-form-register">
+                <h3 class="animate__animated animate__backInDown">Crea tu cuenta</h3>
+                <label class="animate__animated animate__backInRight" for="nombre">Escribe tu nombre</label>
+                <input class="animate__animated animate__backInRight" type="text" name="nombre" placeholder="Nombre" required>
+                <label class="animate__animated animate__backInRight" for="apellido">Escribe tu apellido</label>
+                <input class="animate__animated animate__backInRight" type="text" name="apellido" placeholder="Apellido" required>
+                <label class="animate__animated animate__backInRight" for="email">Email</label>
+                <input class="animate__animated animate__backInRight" type="email" name="email" placeholder="example@gmail.com" required>
+                <label class="animate__animated animate__backInRight" for="password">Contraseña</label>
+                <input class="animate__animated animate__backInRight" type="password" name="password" placeholder="*********" required>
+                <label class="animate__animated animate__backInRight" for="password2">Repite la contraseña</label>
+                <input class="animate__animated animate__backInRight" type="password" name="password2" placeholder="*********" required>
+                <section class="form-register-checkbox animate__animated animate__backInRight">
+                    <div class="form-register-checkbox-div">
+                        <input type="checkbox" name="" value="Acepto terminos y condiciones">
+                    <label for="checkbox" required>Acepto terminos y condiciones</label>
+                    </div>
+                    <div class="form-register-checkbox-div">
+                        <input type="checkbox" name="ofertas" value="ofertas" required>
+                        <label for="ofertas">Recibir ofertas y novedades por email</label>
+                    </div>
+                </section>
+                <input class="form-button-register animate__animated animate__backInUp" type="submit">
+            </form>
+        </section>
     </main>
     <footer class="container-fluid d-flex flex-column">
         <section class="footer-container-icons">

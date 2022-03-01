@@ -119,11 +119,7 @@ main{
         .main-ofertas1{
             background: $backgraund-secondary;
             h2{
-                font-size: $font-big;
-                color: $color-secondary;
-                font-style:italic;
-                text-transform: uppercase;
-                text-shadow: 1px 1px 1px rgb(49, 48, 49);
+                @extend .titulo;
             }
         }
         /*Seccion contenedora cards ofertas index.html*/
@@ -172,11 +168,7 @@ main{
         .main-servicios-title{
             background: $backgraund-secondary;
             h2{
-                font-size: $font-big;
-                color: $color-secondary;
-                font-style: italic;
-                text-transform: uppercase;
-                text-shadow: 1px 1px 1px rgb(49, 48, 49);
+                @extend .titulo;
             }
         }
         /*Contenedor de cards servicios*/
@@ -210,27 +202,19 @@ main{
             /*inscersion de las imagenes dentro de las cards servicios*/
             .card1{
                 background-image: url(../img/estacionamiento.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+                @extend .bgimage;
             }
             .card2{
                 background-image: url(../img/atencionTelefonica.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+                @extend .bgimage;
             }
             .card3{
                 background-image: url(../img/ahorro.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+                @extend .bgimage;
             }
             .card4{
                 background-image: url(../img/ayudaCargar.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+                @extend .bgimage;
             }
         }
     }
@@ -301,12 +285,7 @@ footer{
     height:6rem;
     background: $backgraund-secondary;
     h2{
-        font-size:$font-big;
-        font-style: italic;
-        color:$color-secondary;
-        text-shadow: 1px 1px 1px rgb(49, 48, 49);
-        margin: 2rem;
-        text-transform: uppercase;
+        @extend .titulo;
     }
 }
 /*Estilos main aceitunas.html*/
@@ -318,8 +297,7 @@ footer{
         padding: 3rem;
         height:min-content;
         margin:2rem;
-        border: 1px solid rgba(173,166,173,1);
-        border-radius: 1rem;
+        @extend .border-container;
         h4{
             font-size:$font-md;
             color:$color-hover;
@@ -349,8 +327,7 @@ footer{
         width: 70%;
         height: 90%;
         margin: 3rem;
-        border: 1px solid rgba(173,166,173,1);
-        border-radius: 2rem;
+        @extend .border-container;
         .catalogos-cards{
             div{
                 width: 80%;
@@ -388,5 +365,119 @@ footer{
                 color: black;
             }
         }
+    }
+}
+/*Estilos login.html*/
+.main-login-form{
+    width:100%;
+    height:90vh;
+    display: grid;
+    place-items: center;
+    .container-main-login{
+        width:28%;
+        height:70%;
+        @extend .flex;
+        align-items:center;
+        @extend .border-container;
+        .login-container-form{
+            @extend .flex;
+            h3{
+                text-align: center;
+                margin: 4rem;
+                font-size: $font-big;
+                color:$color-hover ;
+                text-shadow: 1px 1px 1px rgb(141, 124, 141);
+            }
+            label{
+                font-size:$font-sm;
+                font-weight: bold; 
+            }
+            input{
+                width: 22rem;
+                @extend .border-input;
+                font-size: $font-sm;
+            }
+            input:hover{
+                border: 2px solid $color-hover;
+            }
+            .form-button-login{
+                margin-top: 5rem;
+                border: 1.5px solid rgb(58, 58, 197);
+                color: rgb(58, 58, 197);
+                background-color: white;
+                font-weight:bold; 
+            }
+            .form-button-login:hover{
+                color:$color-hover;
+                font-weight: bold;
+                border: 2px solid $color-hover;
+            }
+        }
+    }
+    .login-container-form-register{
+        text-align:center;
+        margin-top: 2rem;
+        font-weight: 500;
+        font-size: $font-sm;
+        a{
+            text-decoration: none;
+            color:black; 
+        }
+        a:hover{
+            color:$color-hover;
+            font-weight: bold;
+        }
+    }
+}
+/*Estilos register.html*/
+.main-container-form-register{
+    width:45%;
+    height:auto;
+    @extend .flex;
+    align-items:center;
+    @extend .border-container;
+    .main-form-register{
+        @extend .flex;
+        width:50%;
+        h3{
+            text-align: center;
+            margin:2rem;
+            font-size: $font-big;
+            color:$color-hover;
+            text-shadow: 1px 1px 1px rgb(141, 124, 141);
+        }
+        label{
+            font-size:$font-sm;
+            font-weight: bold;
+            margin-top: 2rem; 
+        }
+        input{
+            @extend .border-input;
+            font-size: $font-sm;
+        }
+        input:hover{
+            color:$color-hover;
+            font-weight: bold;
+            border: 2px solid $color-hover;
+        }
+    }
+    .form-register-checkbox{
+        @extend .flex;
+        .form-register-checkbox-div{
+            input{
+                height:1.2rem;
+            }
+            label{
+                font-size:$font-sm;
+            }
+        }
+    }
+    .form-button-register{
+        margin: 4rem auto;
+        width: 100%;
+        border: 1.5px solid rgb(58, 58, 197);
+        color: rgb(58, 58, 197);
+        background-color: white;
+        font-weight:bold; ;
     }
 }
