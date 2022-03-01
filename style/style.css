@@ -1,5 +1,6 @@
-.titulo, .main-section-catalogos-titulo h2, main .main-section-servicios .main-servicios-title h2, main .main-section2-container .main-ofertas1 h2 {
-  font-size: 2.1rem;
+@charset "UTF-8";
+.titulo, .main-container-empresa .main-container-empresa-titulo h1, .main-section-catalogos-titulo h2, main .main-section-servicios .main-servicios-title h2, main .main-section2-container .main-ofertas1 h2 {
+  font-size: 2.4rem;
   color: whitesmoke;
   font-style: italic;
   text-transform: uppercase;
@@ -120,7 +121,7 @@ main .main-section1-container div h2 {
   font-style: italic;
 }
 main .main-section1-container div p {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   text-align: center;
 }
 main .main-section1-container div .btn {
@@ -302,7 +303,7 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
   margin: 2rem;
 }
 .main-section-catalogos-container aside h4 {
-  font-size: 1.8rem;
+  font-size: 2.1rem;
   color: orangered;
 }
 .main-section-catalogos-container aside ul {
@@ -310,7 +311,7 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
 }
 .main-section-catalogos-container aside ul li {
   list-style: none;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   line-height: 2.5rem;
 }
 .main-section-catalogos-container aside ul li a {
@@ -469,6 +470,45 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
 .main-container-form-register input.form-button-register:hover {
   border-color: #0d6efd;
   color: whitesmoke;
+}
+
+/*Estilos nosotros.html*/
+.main-container-empresa {
+  height: auto;
+  width: 100%;
+}
+.main-container-empresa .main-container-empresa-titulo {
+  width: 100%;
+  height: 6rem;
+  background: linear-gradient(90deg, #2521a7 22%, #3530da 93%);
+}
+.main-container-empresa .carousel-inner {
+  max-width: 90rem;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 1px 1px 22px -5px #ada6ad;
+}
+.main-container-empresa .main-empresa-conteiner-info div {
+  margin: 3rem;
+}
+.main-container-empresa .main-empresa-conteiner-info div h3 {
+  font-size: 2.1rem;
+  color: orangered;
+  text-shadow: 1px 1px 1px #313031;
+}
+.main-container-empresa .main-empresa-conteiner-info div p {
+  font-size: 1.8rem;
+  text-align: justify;
+}
+.main-container-empresa .main-empresa-conteiner-info div a {
+  color: black;
+  text-decoration: none;
+}
+.main-container-empresa .main-empresa-conteiner-info .main-empresa-nos-acompañan img {
+  margin: 1rem;
+  width: 20rem;
+  border-radius: 20rem;
+  padding: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
