@@ -364,7 +364,7 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
 /*Estilos login.html*/
 .main-login-form {
   width: 100%;
-  height: 90vh;
+  margin: 2rem;
   display: grid;
   place-items: center;
 }
