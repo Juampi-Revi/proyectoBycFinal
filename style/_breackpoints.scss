@@ -1,0 +1,51 @@
+$breackpoints: (
+    "xs": 0,
+    "sm": 480px,
+    "sml": 600px,
+    "md": 720px,
+    "mdl": 800px,
+    "lg": 960px,
+    "xl": 1200px,
+);
+
+@mixin xs{
+    @media (max-width: map-get($breackpoints, "xs")){
+        @content;
+    }
+}
+
+@mixin sm{
+    @media (max-width: map-get($breackpoints, "sm")){
+        @content;
+    }
+}
+
+@mixin sml{
+    @media (max-width: map-get($breackpoints, "sml")){
+        @content;
+    }
+}
+
+@mixin md{
+    @media (max-width: map-get($breackpoints, "md")){
+        @content;
+    }
+}
+
+@mixin mdl{
+    @media (max-width: map-get($breackpoints, "mdl")){
+        @content;
+    }
+}
+
+@mixin lg{
+    @media (max-width: map-get($breackpoints, "lg")){
+        @content;
+    }
+}
+
+@mixin xl{
+    @media (max-width: map-get($breackpoints, "xl")){
+        @content;
+    }
+}

@@ -1,4 +1,6 @@
 @import "variables";
+
+@import "breackpoints";
 *{
     box-sizing: border-box;
     padding: 0;
@@ -79,10 +81,18 @@ main{
         div{
             /*Estilos de la imagen primera seccion del main*/
             img{
-                max-width: 65rem;
+                width: 65rem;
                 padding: 1rem;
                 box-shadow: 1px 1px 22px -6px rgba(173,166,173,1);
                 margin-bottom: 2rem;
+                @include md{
+                    width: 100%;
+                    padding: 0;
+                    box-shadow: none;
+                }
+                @include sm{
+                    width: 32rem;
+                }
             }
         }
         /*Saludo y botton registro*/
@@ -92,6 +102,9 @@ main{
                 margin-bottom:5rem;
                 font-size: 3rem;
                 font-style: italic;
+                @include sm{
+                    text-align:center;
+                }
             }
             p{
                 font-size:$font-big;
@@ -125,13 +138,25 @@ main{
         /*Seccion contenedora cards ofertas index.html*/
         .main-ofertas-cards{
             height:auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:center;
+            @include lg{
+                flex-wrap: nowrap;
+                justify-content:start;
+                overflow-x: scroll;
+                overscroll-behavior-x: contain;
+                scroll-snap-type: x proximity;
+            }
             /*Estilos cards ofertas*/
-            .card{
+            .cards-ofertas{
                 width: 30rem;
                 height:auto;
                 margin:2rem;
                 border-radius: 2rem;
                 padding:1rem;
+                @extend .flex;
+                @extend .border-container;
                 img{
                     width: 22rem;
                     margin: 0 auto;
@@ -178,26 +203,40 @@ main{
             .main-cards-services{
                 width: 35rem;
                 height:18rem;
-                border: 1px solid $color-primary;
-                border-radius: 1rem;
+                @extend .border-container;
                 text-align: center;
                 margin: 2rem;
                 transition: border-radius 2s;
+                @include mdl{
+                    width: 30rem;
+                    margin: 1rem
+                }
+                @include md{
+                    width: 25rem;
+                }
+                @include sml{
+                    width: 20rem;
+                    border-radius:20rem;
+                }
                 h4{
                     margin-top:2rem;
                     font-size: $font-md;
-                    color:whitesmoke;
+                    color: $color-secondary;
                     text-shadow: 1px 1px 1px rgb(8, 8, 8);
+                    @include sml{
+                        color: $color-primary;
+                        text-shadow: 1px 1px 1px $color-secondary;
+                    }
                 }
             }
             .main-cards-services:hover{
                 border-radius: 10rem;
-                color: orangered;
-                border: 2px solid orangered; 
+                color: $color-hover;
+                border: 2px solid $color-hover; 
             }
             .main-cards-services:hover h4{
                 font-weight: bold;
-                color: orangered;
+                color: $color-hover;
             }
             /*inscersion de las imagenes dentro de las cards servicios*/
             .card1{
@@ -227,6 +266,9 @@ footer{
         display: flex;
         justify-content: flex-end;
         border-bottom: 0.1px solid rgba(245, 245, 245, 0.932);
+        @include mdl{
+            justify-content:center;
+        }
         a{
             margin:1rem;
             i{
@@ -239,30 +281,57 @@ footer{
     }
     /*Segunda seccion del footer contenedora de mapa de sitio*/
     .footer-container-mapaSitio{
+        @include mdl{
+            flex-direction: column;
+        }
         /*contenedor del logo footer*/
         .footer-mapaSitio-img{
             display:grid;
             place-items: center;
+            @include mdl{
+                margin-top: 2rem;
+            }
             a{
                 img{
                     width: 23rem;
+                    @include sml{
+                        width: 18rem;
+                    }
                 }
             }
         }
         /*contenedor mapa de sitio footer index.html*/
         .listas-footer{
+            @include mdl{
+                justify-content:center;
+            }
             div{
                 margin: 3rem;
+                @include sml{
+                    margin: 1.5rem;
+                }
+                @include sm{
+                    margin: 0.5rem;
+                }
                 .footer-lista{
                     list-style:none;
                     font-size: $font-md;
+                    @include sm{
+                        font-size: $font-sm;
+                    }
                     li{
                         a{
                             text-decoration:none;
                             color: $color-secondary;
+                            @include sm{
+                                font-size: $font-sm;
+                            }
                             h3{
                                 font-size: $font-big;
                                 text-shadow: 1px 1px 1px rgb(8, 8, 8);
+                                @include sm{
+                                    font-size: $font-sm;
+                                }
                             }
                         }
                     }
@@ -291,6 +360,11 @@ footer{
 /*Estilos main aceitunas.html*/
 .main-section-catalogos-container{ 
     height:80vh;
+    @include lg{
+        flex-direction:column;
+        height: auto;
+        margin-bottom: 1rem;
+    }
     /*Estilos aside main aceitunas.html*/
     aside{
         width:auto;
@@ -298,52 +372,117 @@ footer{
         height:min-content;
         margin:2rem;
         @extend .border-container;
+        @include lg{
+            display: flex;
+            justify-content:center;
+            width: 70%;
+        }
+        @include md{ 
+            width: 90%;
+        }
+        @include sml{
+            width: 97%;
+            padding:1rem
+        }
+        @include sml{
+            flex-wrap: wrap;
+        }
         h4{
             font-size:$font-big;
             color:$color-hover;
+            @include lg{
+                margin: auto;
+            }
         }
-        ul{
-            margin-top: 1rem;
-            li{
-                list-style: none;
-                font-size: $font-md;
-                line-height: 2.5rem;
-                a{
-                    text-decoration: none;
-                    color: $color-primary;
+        div{
+            @include lg{
+                display:flex;
+                flex-direction: row;
+            }
+            ul{
+                margin-top: 1rem;
+                @include lg{
+                    margin: 2rem;
                 }
-                a:hover{
-                    color:$color-hover;
+                @include sml{
+                    margin: 1rem;
+                }
+                li{
+                    list-style: none;
+                    font-size: $font-md;
+                    line-height: 2.5rem;
+                    a{
+                        text-decoration: none;
+                        color: $color-primary;
+                    }
+                    a:hover{
+                        color:$color-hover;
+                        font-weight: bold;
+                    }
+                }
+                .main-aside-categorias-titulo{
                     font-weight: bold;
                 }
             }
-            .main-aside-categorias-titulo{
-                font-weight: bold;
-            }
         }
-        
     }
     .main-section-catalogos-cards{
         width: 70%;
         height: 90%;
         margin: 3rem;
+        @include lg{ 
+            margin: 1.5rem;
+            width: 80%;
+        }
+        @include md{
+            width: 90%;
+            margin: 0;
+        }
+        @include sml{
+            width: 97%;
+        }
         @extend .border-container;
         .catalogos-cards{
+            @include lg{
+                padding: 2rem;
+            }
             div{
                 width: 80%;
                 margin: auto;
+                @include sml{
+                    flex-direction: column;
+                }
                 .imagen-card{
-                    width: 30rem;
+                    width: 50%;
                     padding:1rem;
+                    @include mdl{ 
+                        width: 60%;
+                    }
+                    @include sm{
+                        width: 70%;
+                    }
                 }
                 div{
+                    @include sml{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content:center;
+                    }
                     h5{
                         font-size:$font-big;
                         color:$color-hover;
                         margin-bottom: 2rem;
+                        @include sml{
+                            text-align: center;
+                            font-size: $font-md;
+                        }
                     }
                     p{
                         font-size:$font-md;
+                        @include sml{
+                            text-align: justify;
+                            font-size: $font-sm;
+                        }
                     }
                     a{
                         font-size:$font-sm;
@@ -369,7 +508,6 @@ footer{
 }
 /*Estilos login.html*/
 .main-login-form{
-    width:100%;
     height:90vh;
     margin: 2rem;
     display: grid;
@@ -380,6 +518,13 @@ footer{
         @extend .flex;
         align-items:center;
         @extend .border-container;
+        @include lg{
+            width: 35%;
+        }
+        @include md{
+            border: none;
+            box-shadow:none;
+        }
         .login-container-form{
             @extend .flex;
             h3{
@@ -435,63 +580,87 @@ footer{
     }
 }
 /*Estilos register.html*/
-.main-container-form-register{
-    width:45%;
+.main-register-form{
     height:auto;
-    @extend .flex;
-    align-items:center;
-    @extend .border-container;
-    .main-form-register{
-        @extend .flex;
+    margin: 2rem;
+    display: grid;
+    place-items: center;
+    .main-container-form-register{
         width:50%;
-        h3{
-            text-align: center;
-            margin:2rem;
-            font-size: $font-big;
-            color:$color-hover;
-            text-shadow: 1px 1px 1px rgb(141, 124, 141);
-        }
-        label{
-            font-size:$font-sm;
-            font-weight: bold;
-            margin-top: 2rem; 
-        }
-        input{
-            @extend .border-input;
-            font-size: $font-sm;
-        }
-        input:hover{
-            color:$color-hover;
-            font-weight: bold;
-            border: 2px solid $color-hover;
-        }
-    }
-    .form-register-checkbox{
+        height:auto;
         @extend .flex;
-        .form-register-checkbox-div{
-            input{
-                height:1.2rem;
+        align-items:center;
+        @extend .border-container;
+        @include xl{
+            width: 63%;
+        }
+        @include lg{
+            width: 75%;
+        }
+        @include mdl{
+            width: 100%;
+            border: none;
+            box-shadow:none;
+        }
+        .main-form-register{
+            @extend .flex;
+            width:50%;
+            @include sml{
+                width: 70%;
+            }
+            @include sm{
+                width: 93%;
+            }
+            h3{
+                text-align: center;
+                margin:2rem;
+                font-size: $font-big;
+                color:$color-hover;
+                text-shadow: 1px 1px 1px rgb(141, 124, 141);
             }
             label{
                 font-size:$font-sm;
+                font-weight: bold;
+                margin-top: 2rem; 
+            }
+            input{
+                @extend .border-input;
+                font-size: $font-sm;
+            }
+            input:hover{
+                color:$color-hover;
+                font-weight: bold;
+                border: 2px solid $color-hover;
             }
         }
-    }
-    .form-button-register{
-        margin: 4rem auto;
-        width: 100%;
-        padding: 1rem;
-        font-size: $font-sm;
-        @extend .border-input;
-        a{
-            text-decoration: none;
+        .form-register-checkbox{
+            @extend .flex;
+            .form-register-checkbox-div{
+                input{
+                    height:1.2rem;
+                }
+                label{
+                    font-size:$font-sm;
+                }
+            }
+        }
+        .form-button-register{
+            margin: 4rem auto;
+            width: 100%;
+            padding: 1rem;
+            font-size: $font-sm;
+            @extend .border-input;
+            a{
+                text-decoration: none;
+            }
+        }
+        input.form-button-register:hover{
+            border-color: #0d6efd;
+            color: $color-secondary;
         }
     }
-    input.form-button-register:hover{
-        border-color: #0d6efd;
-        color: $color-secondary;
-    }
 }
+
 /*Estilos nosotros.html*/
 .main-container-empresa{
     height:auto;
@@ -505,11 +674,20 @@ footer{
         }
     }
     .carousel-inner{
-        max-width: 90rem;
+        width: 70%;
         margin: 1rem;
         padding: 1rem;
-        box-shadow: 1px 1px 22px -5px rgba(173,166,173,1)
+        box-shadow: 1px 1px 22px -5px rgba(173,166,173,1);
+        @include lg{
+            width: 100%;
+            padding:0;
         }
+    }
+    button{
+        span{
+            color: $color-hover;
+        }
+    }
     .main-empresa-conteiner-info{
         div{
             margin: 3rem;
@@ -532,7 +710,12 @@ footer{
             width: 20rem;
             border-radius: 20rem;
             padding:1rem;
+            @include md{
+                width: 15rem;
+            }
+            @include sml{
+                width: 10rem;
+            }
         }
     } 
-        
 }
