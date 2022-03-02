@@ -549,7 +549,6 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
 }
 @media (max-width: 600px) {
   .main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div p {
-    text-align: justify;
     font-size: 1.5rem;
   }
 }
