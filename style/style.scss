@@ -481,6 +481,7 @@ footer{
                         font-size:$font-md;
                         @include sml{
                             font-size: $font-sm;
+                            text-align: center;
                         }
                     }
                     a{
