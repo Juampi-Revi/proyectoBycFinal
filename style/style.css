@@ -179,9 +179,9 @@ main .main-section2-container .main-ofertas-cards {
   }
 }
 main .main-section2-container .main-ofertas-cards .cards-ofertas {
-  width: 30rem;
+  width: 26rem;
   height: auto;
-  margin: 2rem;
+  margin: 1rem;
   border-radius: 2rem;
   padding: 1rem;
 }
