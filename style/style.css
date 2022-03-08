@@ -13,18 +13,18 @@
   background-position: center;
 }
 
-.flex, .main-register-form .main-container-form-register .form-register-checkbox, .main-register-form .main-container-form-register .main-form-register, .main-register-form .main-container-form-register, .main-login-form .container-main-login .login-container-form, .main-login-form .container-main-login, main .main-section2-container .main-ofertas-cards .cards-ofertas {
+.flex, .main-contacto-container .card-contacto form, .main-contacto-container .card-contacto, .main-register-form .main-container-form-register .form-register-checkbox, .main-register-form .main-container-form-register .main-form-register, .main-register-form .main-container-form-register, .main-login-form .container-main-login .login-container-form, .main-login-form .container-main-login, main .main-section2-container .main-ofertas-cards .cards-ofertas {
   display: flex;
   flex-direction: column;
 }
 
-.border-container, .main-register-form .main-container-form-register, .main-login-form .container-main-login, .main-section-catalogos-container .main-section-catalogos-cards, .main-section-catalogos-container aside, main .main-section-servicios .container-servicios-cards .main-cards-services, main .main-section2-container .main-ofertas-cards .cards-ofertas {
+.border-container, .main-contacto-container .card-contacto, .main-register-form .main-container-form-register, .main-login-form .container-main-login, .main-section-catalogos-container .main-section-catalogos-cards, .main-section-catalogos-container aside, main .main-section-servicios .container-servicios-cards .main-cards-services, main .main-section2-container .main-ofertas-cards .cards-ofertas {
   border: 1px solid #ada6ad;
   border-radius: 2rem;
   box-shadow: 2px 10px 22px -16px rgba(0, 0, 0, 0.49);
 }
 
-.border-input, .main-register-form .main-container-form-register .form-button-register, .main-register-form .main-container-form-register .main-form-register input, .main-login-form .container-main-login .login-container-form .btn, .main-login-form .container-main-login .login-container-form input {
+.border-input, .main-contacto-container .card-contacto form input, .main-register-form .main-container-form-register .form-button-register, .main-register-form .main-container-form-register .main-form-register input, .main-login-form .container-main-login .login-container-form .btn, .main-login-form .container-main-login .login-container-form input {
   border: 1.5px solid #ada6ad;
   border-radius: 0.8rem;
   padding: 0.7rem;
@@ -531,6 +531,7 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
   }
 }
 .main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div h5 {
@@ -557,7 +558,7 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
   font-size: 1.5rem;
   border-radius: 1rem;
   padding: 1rem;
-  margin-top: 5rem;
+  margin: 4rem;
 }
 .main-section-catalogos-container .main-section-catalogos-cards .catalogos-cards div div a:hover {
   color: orangered;
@@ -778,6 +779,83 @@ footer .footer-container-mapaSitio .listas-footer div .footer-lista li:hover a {
   .main-container-empresa .main-empresa-conteiner-info .main-empresa-nos-acompañan img {
     width: 10rem;
   }
+}
+
+.main-contacto-container {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+.main-contacto-container .card-contacto {
+  width: 50%;
+  height: auto;
+  padding: 2rem;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .main-contacto-container .card-contacto {
+    width: 63%;
+  }
+}
+@media (max-width: 960px) {
+  .main-contacto-container .card-contacto {
+    width: 75%;
+  }
+}
+@media (max-width: 800px) {
+  .main-contacto-container .card-contacto {
+    width: 100%;
+    border: none;
+    box-shadow: none;
+  }
+}
+@media (max-width: 480px) {
+  .main-contacto-container .card-contacto {
+    padding: 0;
+  }
+}
+.main-contacto-container .card-contacto h2 {
+  text-align: center;
+  font-size: 2.1rem;
+  color: orangered;
+  text-shadow: 1px 1px 1px #8d7c8d;
+}
+.main-contacto-container .card-contacto h4 {
+  text-align: center;
+  color: gray;
+  font-size: 1.5rem;
+}
+.main-contacto-container .card-contacto form {
+  width: 50%;
+}
+@media (max-width: 600px) {
+  .main-contacto-container .card-contacto form {
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .main-contacto-container .card-contacto form {
+    width: 85%;
+  }
+}
+.main-contacto-container .card-contacto form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+.main-contacto-container .card-contacto form input {
+  font-size: 1.5rem;
+}
+.main-contacto-container .card-contacto form input:hover {
+  color: orangered;
+  font-weight: bold;
+  border: 2px solid orangered;
+}
+.main-contacto-container .card-contacto form .btn:hover {
+  border-color: #0d6efd;
+  color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */

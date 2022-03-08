@@ -467,6 +467,7 @@ footer{
                         display: flex;
                         flex-direction: column;
                         justify-content:center;
+                        width: 100%;
                     }
                     h5{
                         font-size:$font-big;
@@ -488,7 +489,7 @@ footer{
                         font-size:$font-sm;
                         border-radius: 1rem;
                         padding: 1rem;
-                        margin-top: 5rem;
+                        margin: 4rem;
                     }
                     a:hover{
                         color: $color-hover;
@@ -718,4 +719,72 @@ footer{
             }
         }
     } 
+}
+.main-contacto-container{
+    width: 100%;
+    height:auto;
+    display:grid;
+    place-items: center;
+    padding: 2rem;
+    .card-contacto{
+        width:50%;
+        height:auto;
+        padding: 2rem;
+        @extend .flex;
+        align-items:center;
+        @extend .border-container;
+        @include xl{
+            width: 63%;
+        }
+        @include lg{
+            width: 75%;
+        }
+        @include mdl{
+            width: 100%;
+            border: none;
+            box-shadow:none;
+        }
+        @include sm{
+            padding: 0;
+        }
+        h2{
+            text-align: center;
+            font-size: $font-big;
+            color: $color-hover;
+            text-shadow: 1px 1px 1px rgb(141, 124, 141);
+        }
+        h4{
+            text-align: center;
+            color: gray;
+            font-size: $font-sm;
+        }
+        form{
+            width: 50%;
+            @extend .flex;
+            @include sml{
+                width: 70%;
+            }
+            @include sm{
+                width: 85%;
+            }
+            label{
+                font-size:$font-sm;
+                font-weight: bold;
+                margin-top: 1rem; 
+            }
+            input{
+                @extend .border-input;
+                font-size: $font-sm;
+            }
+            input:hover{
+                color:$color-hover;
+                font-weight: bold;
+                border: 2px solid $color-hover;
+            }
+            .btn:hover{
+                border-color: #0d6efd;
+                color: $color-secondary;
+            }
+        }
+    }
 }
